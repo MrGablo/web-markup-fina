@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact How Not To Cook for more information or inquiries">
+    <meta name="keywords" content="contact, inquiries, questions, cooking">
+    <meta name="author" content="How Not To Cook">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        /*copied from internet no idea how to that in java script in html*/
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent actual form submission
+            const successMessage = document.getElementById("success-message");
+            successMessage.style.display = "block"; // Show the success message
+            document.getElementById("contact-form").reset(); // Clear form after submission
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="images/final-logo.png" alt="How Not To Cook Logo" class="logo">
+            <h1>Contact Us</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kitchen.html">Kitchen Page</a></li>
+                <li><a href="burnt-food.html">Food Not Burnt Page</a></li>
+                <li><a href="cut-page.html">Cut Page</a></li>
+                <li><a href="meat-page.html">Meat Page</a></li>
+                <li><a href="contact.html" class = "active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="gender">Gender: *</label><br>
+                <input type="radio" id="mr" name="gender" value="Mr" required> Mr<br>
+                <input type="radio" id="ms" name="gender" value="Ms"> Ms<br><br>
+
+                <label for="fullname">Full Name: *</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
+
+                <label for="email">Email: *</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label for="message">Message: *</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        
+        <p id="success-message" style="display: none; color: green;">Thank you! Your message has been successfully sent.</p>
+    </main>
+
+    <footer>
+        <p>All rights reserved © How Not To Cook</p>
+        <a href="#">X</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>
