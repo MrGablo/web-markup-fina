@@ -1,0 +1,5 @@
+Student name: Gabriele Amorosi
+Student number: 707845
+Student class: IT1A
+GitHub Repository: https://github.com/MrGablo/web-markup-fina
+GitHub Pages URL: https://mrgablo.github.io/web-markup-fina/
