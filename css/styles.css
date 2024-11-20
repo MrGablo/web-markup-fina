@@ -7,6 +7,11 @@
 /*property word spacing*/
 p{
   word-spacing: 3 px;
+  text-indent: 20px;
+}
+
+.cookies{
+  z-index: 9999
 }
 /* Body styling */
 body {
