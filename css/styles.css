@@ -4,7 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/*property word spacing*/
+p{
+  word-spacing: 3 px;
+}
 /* Body styling */
 body {
   font-family: 'Open Sans', sans-serif;  
