@@ -5,24 +5,23 @@
   box-sizing: border-box;
 }
 /*property word spacing*/
-p{
-  word-spacing: 3 px;
+p {
+  word-spacing: 3px;
   text-indent: 20px;
 }
 
-
-
-.cookies{
-  z-index: 9999
+.cookies {
+  z-index: 9999;
 }
 /* Body styling */
 body {
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open Sans', sans-serif;
   color: #333;
   line-height: 1.6;
+  position: relative; /* Added position property */
 }
-#succes-message{
-  display: none; 
+#succes-message {
+  display: none;
   color: green;
 }
 /* Logo and Title Styling */
@@ -30,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   gap: 15px;
   margin-top: 10px;
 }
@@ -40,8 +39,9 @@ body {
   width: auto;
 }
 
-h1, h2 {
-  font-family: 'Montserrat', sans-serif;  
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -85,24 +85,25 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.active {
   color: #FF6347;
-  border-bottom: 3px solid #FF6347; 
+  border-bottom: 3px solid #FF6347;
   border-radius: 0;
 }
 
 nav ul li a.active {
   color: #FF6347;
-  border-bottom: 3px solid #FF6347; 
+  border-bottom: 3px solid #FF6347;
 }
 /* Main Section */
 main {
   padding: 20px;
   text-align: center;
+  position: relative; /* Added position property */
 }
 main figure img {
-  width: 250px;  
-  height: 200px; 
-  object-fit: cover; 
-  border-radius: 5px; 
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 h2 {
   font-size: 1.8em;
@@ -141,14 +142,34 @@ article a:hover {
   color: #FF6347;
 }
 
-/* Footer Styles*/
+/* Table styling with nth-child pseudo-class */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+/* First-letter pseudo-element */
+p:first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FF6347;
+}
+
+/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  
 }
 
 footer a {
@@ -156,11 +177,26 @@ footer a {
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-  
 }
 
 footer a:hover {
   color: #FF6347;
+}
+
+/* Float property usage */
+.float-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 10px;
+}
+
+/* Using '>' for direct child selection */
+nav > ul > li > a {
+  text-transform: uppercase;
 }
 
 /* Form Styling */
@@ -251,20 +287,20 @@ fieldset label {
 /* Responsive Design */
 @media (max-width: 768px) {
   nav ul li {
-      display: block;
-      margin: 10px 0;
+    display: block;
+    margin: 10px 0;
   }
 
   article {
-      width: 90%;
-      margin: 10px auto;
+    width: 90%;
+    margin: 10px auto;
   }
 
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   h2 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 }
